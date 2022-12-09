@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "lib": ["esnext"],
+    "allowJs": true,
+    "checkJs": true,
+    "module": "esnext",
+    "noEmit": true,
+    "skipLibCheck": true,
+    "moduleResolution": "node",
+    "strict": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "noUncheckedIndexedAccess": true
+  },
+  "include": ["packages", "**/.*.cjs", "**/.*.js"]
+}
