@@ -5,10 +5,11 @@
   "author": "yamakenji24",
   "license": "ISC",
   "workspaces": [
-    "packages/*"
+    "packages/@ui/*"
   ],
   "scripts": {
     "build": "npm run build --workspaces",
+    "clean": "npm run clean --workspaces",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
