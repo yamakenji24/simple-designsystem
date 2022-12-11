@@ -15,7 +15,7 @@
   },
   "types": "./dist/index.d.ts",
   "scripts": {
-    "build": "microbundle --compress=false -f modern,esm,cjs --tsconfig tsconfig.build.json --jsx React.createElement --jsxFragment React.Fragment",
+    "build": "microbundle --no-compress -f modern,esm,cjs --tsconfig tsconfig.build.json --jsx React.createElement --jsxFragment React.Fragment",
     "clean": "rimraf dist"
   },
   "devDependencies": {

@@ -1,4 +1,6 @@
-import { Button } from "."
+import { action } from '@storybook/addon-actions';
+import type { Meta, Story } from '@storybook/react';
+import { Button, type Props } from ".";
 
 export default {
   title: 'Button',
@@ -7,10 +9,10 @@ export default {
     variant: 'default',
     size: 's',
   },
-}
+} as Meta<typeof Button>;
 
-export const DefaultStory = (args: any) => (
-  <Button {...args} onClick={() => {}}>
-    Button1111
+export const DefaultStory: Story<Props> = (args) => (
+  <Button {...args} onClick={action('click')}>
+    Button
   </Button>
 )

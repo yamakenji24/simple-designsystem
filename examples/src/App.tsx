@@ -4,7 +4,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Button variant='default' size='m'>
+        <Button variant='primary' size='m'>
           button from components
         </Button>
         <p className="bg-yellow-500">test text</p>
