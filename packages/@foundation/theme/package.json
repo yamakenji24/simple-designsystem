@@ -1,0 +1,30 @@
+{
+  "name": "@foundation/theme",
+  "version": "1.0.0",
+  "description": "design theme",
+  "author": "yamakenji24",
+  "license": "ISC",
+  "sideEffects": false,
+  "type": "module",
+  "source": "./src/index.ts",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.module.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    "require": "./dist/index.cjs",
+    "default": "./dist/index.modern.js"
+  },
+  "scripts": {
+    "build": "microbundle --no-compress -f modern,esm,cjs",
+    "clean": "rimraf dist"
+  },
+  "devDependencies": {
+    "microbundle": "^0.15.1",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.9.4"
+  },
+  "files": [
+    "src",
+    "dist"
+  ]
+}
