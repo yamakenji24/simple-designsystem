@@ -5,7 +5,8 @@
   "author": "yamakenji24",
   "license": "ISC",
   "workspaces": [
-    "packages/@ui/*"
+    "packages/@ui/*",
+    "packages/@foundation/*"
   ],
   "scripts": {
     "build": "npm run build --workspaces",
