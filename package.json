@@ -5,8 +5,8 @@
   "author": "yamakenji24",
   "license": "ISC",
   "workspaces": [
-    "packages/@ui/*",
     "packages/@foundation/*",
+    "packages/@ui/*",
     "packages/@config/*"
   ],
   "scripts": {

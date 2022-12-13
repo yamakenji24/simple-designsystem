@@ -35,7 +35,7 @@ const variantToUtilities = (variant: Variant) => {
     case "default":
       return "";
     case "primary":
-      return "bg-sky-500";
+      return "bg-[#0ea5e9]";
     case "danger":
       return "bg-red-500";
     default:
