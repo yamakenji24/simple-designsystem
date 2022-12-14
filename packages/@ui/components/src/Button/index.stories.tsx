@@ -8,6 +8,7 @@ export default {
   args: {
     variant: 'default',
     size: 's',
+    disabled: false,
   },
 } as Meta<typeof Button>;
 

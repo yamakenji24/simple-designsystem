@@ -2,6 +2,6 @@ const { config } = require("@config/tailwind");
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./packages/**/*.tsx"],
+  content: ["./packages/**/*.tsx", "./packages/**/*.ts"],
   presets: [config],
 };

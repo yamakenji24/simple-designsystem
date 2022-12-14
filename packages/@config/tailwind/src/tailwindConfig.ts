@@ -1,4 +1,4 @@
-import { Config } from "tailwindcss";
+import type { Config } from "tailwindcss";
 
 type TailwindConfig = Omit<Config, 'content'>
 const createTailwindConfig = () => {

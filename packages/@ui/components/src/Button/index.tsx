@@ -1,4 +1,5 @@
 import React from "react";
+import { buttonColors } from '@foundation/theme'
 
 type Variant = "default" | "primary" | "danger";
 type Size = "s" | 'm' | 'l';
@@ -35,9 +36,11 @@ const variantToUtilities = (variant: Variant) => {
     case "default":
       return "";
     case "primary":
-      return "bg-[#0ea5e9]";
+      const primary = buttonColors.primary;
+      return `${primary.base} ${primary.hovered}`;
     case "danger":
-      return "bg-red-500";
+      const danger = buttonColors.danger;
+      return `${danger.base} ${danger.hovered} ${danger.disabled}`;
     default:
       return "";
   }

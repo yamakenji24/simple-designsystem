@@ -15,14 +15,14 @@ export const buttonColors = {
   primary: {
     base: "bg-sky-500",
     active: "bg-sky-400",
-    disabled: "bg-gray-500",
-    hovered: "bg-sky-300",
+    disabled: "disabled:bg-gray-500",
+    hovered: "hover:bg-sky-300",
   },
   danger: {
     base: "bg-red-500",
     active: "bg-red-400",
-    disabled: "bg-gray-500",
-    hovered: "bg-red-300",
+    disabled: "disabled:bg-gray-500",
+    hovered: "hover:bg-red-300",
   },
 } as const;
 export type ButtonColors = typeof buttonColors;
